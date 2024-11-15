@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 # listener_pkg/CMakeLists.txt
-add_executable(listener src/list.cpp)
+add_executable(listener src/listener.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 install(TARGETS listener DESTINATION lib/${PROJECT_NAME})
 
